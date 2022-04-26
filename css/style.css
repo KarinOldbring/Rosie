@@ -11,6 +11,11 @@
     background-color: #fff;
 }
 
+.bg-color-personal-info{
+    background-color: #f4f4f4;
+}
+
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -26,6 +31,24 @@
 .ui-menu-color-download {
     background-color: #525252;
 }
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
 
 /* Special paddings/margins/text */
 
@@ -113,13 +136,13 @@ header {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -156,7 +179,7 @@ header {
 /* Hover.css */
 
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
@@ -165,11 +188,12 @@ header {
 footer {
     background-color: #525252;
     color: #fafafa;
-    min-height: 120px;    
+    min-height: 120px;
+    margin: 0;    
 }
 
 .cv-pdf i {
-    font-size: 18spx;
+    font-size: 18px;
     color: #fafafa;
     text-align: center;
     padding-left: 5px;
@@ -190,13 +214,13 @@ footer {
 .social-links li a i {
     width: 32px;
     height: 32px;
-    padding: 12px;
+    padding: 12px 0;
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background-color: #8f8f8f;
+    background: #8f8f8f;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -204,9 +228,56 @@ footer {
 }
 
 .social-links li a i:hover {
-    background-color: #e84610;
+    background: #e84610;
 }
 
 #footer-details {
     padding: 20px;
+}
+
+/* Three reasons */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+/* Personal info */
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+    
 }
